@@ -1,0 +1,531 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root {
+  /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+  /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+  --cor-de-fundo: #f5f5f5;
+  --cor-de-link: #000;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-de-fundo);
+  font-family: "Raleway";
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-de-link);
+}
+
+/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
+de utiliza-la. 
+
+Mas o que é o BEM?
+
+BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
+web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
+Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
+de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
+
+Link da documentação oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/* Sessão de Menu */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section.menu {
+  background-color: #ff1a76;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Estilizando o título do menu */
+.menu__title {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Estilizando o logotipo do menu */
+.menu img {
+  width: 50px;
+  vertical-align: middle;
+  /* Alinhamento vertical */
+}
+
+/* Estilizando a lista de itens do menu */
+
+.menu__list__item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu__list__item a {
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  /* Transição suave da cor do texto */
+}
+
+.menu__list__item__contato a {
+  color: #fff;
+  font-size: small;
+}
+
+.menu__list__item a:hover,
+.menu__list__item__contato a:hover {
+  color: #800033;
+  /* Cor do texto ao passar o mouse */
+}
+
+/* Sessão de Título */
+section.title {
+  background-color: #fff;
+  color: #333;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.title__profile {
+  width: 40vh;
+  border-radius: 50% !important;
+  object-fit: cover;
+}
+
+/* Estilizando o subtítulo */
+.title__subsection {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Estilizando a lista de redes sociais */
+.title__network {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.title__network__item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.title__network__item:last-child {
+  margin-right: 0;
+  /* Remove a margem direita do último item */
+}
+
+.title__network__item a:hover {
+  color: #ff1a76;
+}
+
+/* Sessão Sobre */
+section.about {
+  padding: 50px 20px;
+  background-color: #ff1a76;
+}
+
+/* Estilizando o título da Sessão Sobre */
+.about__title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Estilizando os parágrafos */
+.about__paragraph {
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: justify;
+}
+
+/* Sessão de Skills */
+section.skills {
+  background-color: #fff;
+  color: #333;
+  padding: 50px 20px;
+}
+
+/* Estilizando o título da Sessão de Skills */
+.skills__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #a02455;
+  text-align: center;
+}
+
+/* Estilizando a linha de Skills */
+.skills__line {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilizando o contêiner de cada Skill */
+.skills__box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  color: #a02455;
+  border-radius: 5px;
+  border: 1px solid #ff1a76;
+}
+
+/* Estilizando a imagem e o nome da Skill */
+.skills__img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.skills__name {
+  font-weight: bold;
+}
+
+/* Sessão de Hobbies */
+section.hobbies {
+  background-color: #fff;
+  color: #333;
+  padding: 50px 20px;
+}
+
+/* Estilizando o título da Sessão de Hobbies */
+.hobbies__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #a02455;
+  text-align: center;
+}
+
+/* Estilizando a linha de Hobbies */
+.hobbies__line {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilizando o contêiner de cada Hobby */
+.hobbies__box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  color: #a02455;
+  border-radius: 5px;
+  border: 1px solid #ff1a76;
+}
+
+/* Estilizando a imagem e o nome do Hobby */
+.hobbies__img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.hobbies__name {
+  font-weight: bold;
+}
+
+/* Sessão de Formação Acadêmica */
+section.academic {
+  display: flex;
+  flex-direction: column;
+  background-color: #ff1a76;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+/* Estilizando o título da Sessão de Formação Acadêmica */
+.academic__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Estilizando o contêiner de cada curso */
+.academic__courses__box {
+  margin-bottom: 20px;
+}
+
+/* Estilizando o título do curso */
+.academic__courses__item__title {
+  font-weight: bold;
+}
+
+/* Estilizando o subtítulo do curso */
+.academic__courses__item__subtitle {
+  font-style: italic;
+}
+
+/* Sessão de Experiência Profissional */
+section.experience {
+  background-color: #fff;
+  color: #333;
+  padding: 50px 20px;
+}
+
+/* Estilizando o título da Sessão de Experiência Profissional */
+.experience__section__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilizando os contêineres de cada experiência */
+.experiencie__box {
+  margin-bottom: 20px;
+}
+
+/* Estilizando o título da experiência */
+.experience__title {
+  font-weight: bold;
+}
+
+/* Estilizando o texto da experiência */
+.experience__text {
+  font-style: italic;
+}
+
+/* Estilizando os botões */
+.experience__description {
+  margin-top: 10px;
+}
+
+.experiencia__botao--repo,
+.experiencia__botao--demo {
+  background-color: #ff1a76;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.experiencia__botao--repo:hover,
+.experiencia__botao--demo:hover {
+  background-color: #333;
+}
+
+/* Sessão de Contato */
+section.formcontato {
+  background-color: #ff1a76;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+/* Estilizando o título da Sessão de Contato */
+.formcontato__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilizando o subtexto da Sessão de Contato */
+.formcontato__subtext {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* Estilizando o formulário de contato */
+.formcontato__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilizando os campos do formulário */
+.formcontato__input,
+.formcontato__textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #800033;
+  border-radius: 5px;
+}
+
+/* Estilizando o botão de enviar */
+.formcontato__botao {
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.formcontato__botao:hover {
+  background-color: #ff1a76;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* Sessão de Footer */
+
+section.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilizando o texto do Rodapé */
+.footer p {}
+
+/* Estilizando o link no Rodapé */
+.footer a {
+  color: #ff1a76;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/* Tablet (min-width: 768px) */
+@media (min-width: 768px) {
+
+  /* Menu */
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* Title */
+  .title__div {
+    flex-direction: row;
+  }
+
+  .title__container {
+    padding: 0 20px;
+  }
+
+  /* Skills e Hobbies */
+  .skills__line,
+  .hobbies__line {
+    justify-content: space-between;
+  }
+
+  .skills__box,
+  .hobbies__box {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+  /* Academic e Experience */
+  .academic__courses__box,
+  .experiencie__box {
+    width: 48%;
+  }
+
+  /* Formcontato */
+  .formcontato__text {
+    width: 50%;
+    padding-right: 20px;
+    text-align: justify;
+  }
+
+  .formcontato__img {
+    max-width: 50%;
+    /* Definir largura máxima para 50% da largura do contêiner pai */
+    height: auto;
+    /* Garantir proporções corretas da imagem */
+    margin-right: 20px;
+  }
+
+  .formcontato__text {
+    width: 50%;
+    /* Definir largura do texto */
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+  }
+}
+
+/* Mobile (max-width: 767px) */
+@media (max-width: 767px) {
+
+  /* Menu */
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* Title */
+  .title__div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title__profile {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .title__container {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  /* About */
+  .about__container {
+    padding: 0 20px;
+    text-align: justify;
+  }
+
+  /* Skills e Hobbies */
+  .skills__line,
+  .hobbies__line {
+    flex-direction: column;
+  }
+
+  .skills__box,
+  .hobbies__box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Academic e Experience */
+  .academic__courses__box,
+  .experiencie__box {
+    width: 100%;
+  }
+
+  /* Formcontato */
+  .formcontato__text,
+  .formcontato__img {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px 0;
+  }
+}
